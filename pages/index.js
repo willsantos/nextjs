@@ -1,32 +1,37 @@
-import Link from "../src/components/Link";
+import HomeScreen from "../src/screens/HomeScreen";
 
-function Title({ children, as }) {
-  const Tag = as;
+export default HomeScreen;
 
-  return (
-    <>
-      <Tag>
-        {children}
-      </Tag>
+// import Link from "../src/components/Link";
+// import Footer from "../src/components/patterns/Footer";
+// function Title({ children, as }) {
+//   const Tag = as;
+
+//   return (
+//     <>
+//       <Tag>
+//         {children}
+//       </Tag>
       
 
-      <style jsx>{`
-        ${Tag} {
-          color: green;
-          font-family: 'sans-serif';
-        }
-      `}</style>
-    </>
-  );
-}
+//       <style jsx>{`
+//         ${Tag} {
+//           color: green;
+//           font-family: 'sans-serif';
+//         }
+//       `}</style>
+//     </>
+//   );
+// }
 
-export default function HomePage(){
-  return (
-    <div>
-      <Title as="h2">Alura Cases - Home Page</Title>
-      <Link href="/faq">
-        ir para FAQ
-      </Link>
-    </div>
-  );
-}
+// export default function HomePage(){
+//   return (
+//     <div>
+//       <Title as="h2">Alura Cases - Home Page</Title>
+//       <Link href="/faq">
+//         ir para FAQ
+//       </Link>
+//       <Footer/>
+//     </div>
+//   );
+// }
