@@ -1,8 +1,8 @@
 import Footer from '../../components/patterns/Footer'
 import Link from '../../components/Link'
-import Head from 'next/head';
 import { theme } from '../../theme/theme';
 import { Image, Box, Text, Icon, Input, Button } from '../../theme/components';
+import PageTitle from '../../components/PageTitle';
 
 const LOGO_ALURA_URL = 'images/alura-logo.svg';
 const SIDE_IMAGE_URL = 'images/alura-cases.png'
@@ -98,9 +98,9 @@ function SideImage() {
 export default function HomeScreen() {
   return (
     <Box>
-       <Head>
-        <title>Home - Alura cases campanha</title>
-      </Head>
+       <PageTitle>
+         Alura cases
+       </PageTitle>
       <Box
         as="main"
         styleSheet={{

@@ -1,5 +1,5 @@
 import Link from '../src/components/Link';
-import Head from 'next/head';
+import PageTitle from '../src/components/PageTitle';
 
 
 export async function getStaticProps() {
@@ -21,9 +21,9 @@ export default function Faq({faq}) {
 
   return (
     <div>
-      <Head>
-        <title>FAQ - Alura cases campanha</title>
-      </Head>
+      <PageTitle>
+        FAQ - Alura cases campanha
+      </PageTitle>
       <h1>Alura Cases - FAQ</h1>
       <Link href="/">
         Voltar para Home
