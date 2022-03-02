@@ -3,6 +3,7 @@ import Link from '../../components/Link'
 import { theme } from '../../theme/theme';
 import { Image, Box, Text, Icon, Input, Button } from '../../theme/components';
 import PageTitle from '../../components/PageTitle';
+import Head from 'next/head';
 
 const LOGO_ALURA_URL = 'images/alura-logo.svg';
 const SIDE_IMAGE_URL = 'images/alura-cases.png'
@@ -22,7 +23,7 @@ function SideImage() {
         }
       }}
     >
-     
+
       <Box
         styleSheet={{
           top: 0,
@@ -46,7 +47,7 @@ function SideImage() {
           }
         }}
       >
-        <Box 
+        <Box
           styleSheet={{
             height: {
               lg: theme.space["x1/1"],
@@ -98,9 +99,14 @@ function SideImage() {
 export default function HomeScreen() {
   return (
     <Box>
-       <PageTitle>
-         Alura cases
-       </PageTitle>
+      <PageTitle>
+        Alura cases
+      </PageTitle>
+      <Head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet" />
+      </Head>
       <Box
         as="main"
         styleSheet={{
@@ -293,7 +299,7 @@ export default function HomeScreen() {
                       placeholder="Coloque seu email aqui"
                     />
                   </Box>
-                  <Box 
+                  <Box
                     styleSheet={{
                       marginTop: {
                         xs: theme.space.x4,
@@ -306,7 +312,7 @@ export default function HomeScreen() {
                   >
                     <Button
                       type="submit"
-                      // button variant
+                    // button variant
                     >
                       Cadastrar
                     </Button>
