@@ -1,5 +1,6 @@
 import Footer from '../../components/patterns/Footer'
 import Link from '../../components/Link'
+import Head from 'next/head';
 import { theme } from '../../theme/theme';
 import { Image, Box, Text, Icon, Input, Button } from '../../theme/components';
 
@@ -21,6 +22,7 @@ function SideImage() {
         }
       }}
     >
+     
       <Box
         styleSheet={{
           top: 0,
@@ -96,6 +98,9 @@ function SideImage() {
 export default function HomeScreen() {
   return (
     <Box>
+       <Head>
+        <title>Home - Alura cases campanha</title>
+      </Head>
       <Box
         as="main"
         styleSheet={{
